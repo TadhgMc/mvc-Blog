@@ -1,0 +1,15 @@
+    [{
+        "post_title": "I Don't Know What Is Going On!",
+        "post_body": "Nothing makes sense anymore.. Test1",
+        "user_id": 1
+    },
+    {
+        "post_title": "Who Knows What Is Going On?!",
+        "post_body": "Nothing makes sense anymore.. Test2",
+        "user_id": 2
+    },
+    {
+        "post_title": "We Goin' Crazy!",
+        "post_body": "Nothing makes sense anymore.. Test3",
+        "user_id": 3
+    }]

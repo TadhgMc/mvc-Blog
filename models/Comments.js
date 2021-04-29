@@ -13,7 +13,10 @@ Comments.init(
         },
         comment: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            validate: {
+                len: [1],
+            },
         },
         user_id: {
             type: DataTypes.INTEGER,
@@ -35,7 +38,7 @@ Comments.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'posts',
+        modelName: 'comments',
     }
 );
 
