@@ -1,17 +1,17 @@
 [
 {
-    "user_name": "Test1",
-    "email": "Test1@gmail.com",
-    "password": "Test1"
+    "user_name": "MrRogers",
+    "email": "MrRogers@gmail.com",
+    "password": "MrFRogers"
 },
 {
-    "user_name": "Test2",
-    "email":"Test2@gmail.com",
-    "password":"Test2"
+    "user_name": "BobRoss",
+    "email":"BobRoss@gmail.com",
+    "password":"BobbyRoss"
 },
 {
-    "user_name": "Test3",
-    "email":"Test3@gmail.com",
-    "password":"Test3"
+    "user_name": "SteveIrwin",
+    "email":"SteveIrwin@gmail.com",
+    "password":"Crocodilez"
 }
 ]
