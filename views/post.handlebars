@@ -1,0 +1,18 @@
+<div class="text-center">
+  <div class="bg-danger">
+    <h2>{{post.post_title}}</h2>
+    <span>Created by {{post.user.user_name}} on {{format_date post.date_created}}</span>
+  </div>
+  <div class="bg-danger">
+    <p>{{post.post_body}}</p>
+  </div>
+  <div class="comments">
+    {{#each post.comments as |comment| }}
+    <div class="bg-danger">
+      <p>
+        {{comment.user.user_name}}: {{comment.comment}}
+      </p>
+    </div>
+    {{/each}}
+  </div>
+</div>
