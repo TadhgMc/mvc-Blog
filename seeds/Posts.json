@@ -1,15 +1,15 @@
     [{
-        "post_title": "I Don't Know What Is Going On!",
-        "post_body": "Nothing makes sense anymore.. Test1",
+        "post_title": "Hi There Neighbor!",
+        "post_body": "Welcome to the blog!",
         "user_id": 1
     },
     {
-        "post_title": "Who Knows What Is Going On?!",
-        "post_body": "Nothing makes sense anymore.. Test2",
+        "post_title": "Happy Little Accidents",
+        "post_body": "Its not a bug, its a feature!",
         "user_id": 2
     },
     {
-        "post_title": "We Goin' Crazy!",
-        "post_body": "Nothing makes sense anymore.. Test3",
+        "post_title": "Need Help!",
+        "post_body": "Crikey! All these modules are getitng out of hand!",
         "user_id": 3
     }]
