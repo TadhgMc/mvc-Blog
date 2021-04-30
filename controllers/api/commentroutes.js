@@ -37,4 +37,27 @@ router.delete('/:id', withAuth, async (req, res) => {
     };
 });
 
+//need to make a put function
+router.put('/:id', withAuth, async (req, res) => {
+    try{
+        const updatedComment = await Comments.update(
+            {
+                comment: req.body.comment,
+            },
+            {
+                where: {
+                    id: req.params.id
+                },  
+            },
+        );
+
+        if(!updatedComment){res.status(404).json({ message: 'Couldnt find that comment!'})};
+
+        res.json(updatedComment);
+
+    } catch (err) {
+        res.status(500).json(err);
+    };
+});
+
 module.exports = router;

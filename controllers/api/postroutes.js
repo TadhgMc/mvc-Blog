@@ -37,4 +37,27 @@ router.delete('/:id', withAuth, async (req, res) => {
     };
 });
 
+router.put('/:id', withAuth, async (req, res) => {
+    try{
+        const updatedPost = await Posts.update(
+            {
+                post_title: req.body.post_title,
+                post_body: req.body.post_body,
+            },
+            {
+                where: {
+                    id: req.params.id
+                }    
+            },
+        );
+
+        if(!updatedPost){res.status(404).json({ message: 'Couldnt find that post!'})};
+
+        res.json(updatedPost);
+
+    } catch (err) {
+        res.status(500).json(err);
+    };
+});
+
 module.exports = router;
