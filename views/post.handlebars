@@ -3,9 +3,11 @@
     <h2>{{post.post_title}}</h2>
     <span>Created by {{post.user.user_name}} on {{format_date post.date_created}}</span>
   </div>
+
   <div class="bg-danger">
     <p>{{post.post_body}}</p>
   </div>
+
   <div class="comments">
     {{#each post.comments as |comment| }}
     <div class="bg-danger">
@@ -15,4 +17,20 @@
     </div>
     {{/each}}
   </div>
+
+  <div class="col-md-6 bg-danger">
+    <h3>Create a new comment:</h3>
+    <form class="form new-comment-form">
+      <div class="form-group">
+        <label for="comment-desc">comment:</label>
+        <textarea class="form-input" id="comment-desc" name="comment-desc"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
 </div>
+
+<script src="/js/post.js"></script>
