@@ -16,6 +16,6 @@ if (process.env.JAWSDB_URL) {
       port: 5432
     }
   );
-}
+};
 
 module.exports = sequelize;
